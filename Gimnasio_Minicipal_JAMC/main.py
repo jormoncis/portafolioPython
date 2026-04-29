@@ -7,6 +7,7 @@ porcentaje_membresia = 0
 porcentaje_botella = 0
 
 print("Bienvenido al Gimnasio Municipal")
+
 dias = int(input("Ingrese el número de días asistidos: "))
 print("")
 adulto = input("¿Adulto mayor? (s/n): ")
