@@ -14,7 +14,8 @@ try:
         exit()
 
 except ValueError as e:
-    print(f'Error: {e}')
+    print('Digite cantidad de dás asistidos válidos.')
+    exit()
 else:
     es_mayor = a_mayor in ('s','si','sí')
 
