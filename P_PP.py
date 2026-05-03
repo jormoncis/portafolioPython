@@ -13,10 +13,10 @@ try:
         print('Ingrese una "S" o "N"')
         exit()
 
-except ValueError as e:
+except ValueError:
     print('Digite cantidad de dás asistidos válidos.')
     exit()
-    
+
 else:
     es_mayor = a_mayor in ('s','si','sí')
 
