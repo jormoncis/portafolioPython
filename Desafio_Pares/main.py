@@ -6,6 +6,13 @@ print()
 nIni= int(input("Ingrese un numero Inicial: "))
 nFin= int(input("Ingrese un numero Final: "))
 
+def calculoCercano(random, opc):
+    calculado = random - opc
+    if calculado < 0:
+        calculado = calculado * -1
+    return calculado
+    
+
 if(nIni > nFin):
     print("El numero inicial no puede ser mayor al numero final")
     exit()
@@ -29,7 +36,9 @@ else:
     if opc2 == ajustado:
         print("Felicitaciones, pudiste adivinar.")
     else:
-        if(abs(ajustado - opc1) < abs(ajustado - opc2)):
+        opc1 = calculoCercano(ajustado, opc1)
+        opc2 = calculoCercano(ajustado, opc2)
+        if( opc1 < opc2):
             print("¡El numero es mas cercano es al primer intento!")     
         else:
             print("¡El numero es mas cercano es al segundo intento!")
