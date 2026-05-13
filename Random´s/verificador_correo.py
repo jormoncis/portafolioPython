@@ -1,11 +1,13 @@
-DOMINIO_VALIDO = '@duocuc.cl'
+DOMINIO_VALIDO = 'duocuc.cl'
 nom = ''
 dom = ''
 acceso = False
 
 correo = input('Ingrese su correo: ')
 for i in correo:
-    if i == '@': acceso = True
+    if i == '@': 
+        acceso = True
+        continue 
 
     if not acceso:
         nom += i
