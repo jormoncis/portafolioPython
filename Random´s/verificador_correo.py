@@ -28,7 +28,7 @@ try:
     if contar_pun >= 2:
         print('El correo solo puede contener un punto.')
         exit()
-    if nom in '1234567890':
+    if correo_NV== False:
         print('El correo no puede contener ningun digito en el.')
         exit()
     else:
